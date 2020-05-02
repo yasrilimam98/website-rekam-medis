@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+#wrap {
+	height: 440px;
+	width: 300px;
+	max-height: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-bottom: 40px;
+	padding-top: 40px;
+	border: 2px solid rgba(37,57,81,0.2);
+}
+
+#result {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	overflow: auto;
+}
+
+#result span {
+	display: inline-block;
+	padding: 5px 20px;
+	background-color: #2ecc71;
+	margin: 10px 10px;
+}
+
+#result .bot {
+	text-align: left;
+}
+#result .bot span {
+	border-radius: 20px 20px 20px 0;
+	background-color: #EEE;
+}
+
+#result .you {
+	text-align: right;
+}
+#result .you span {
+	border-radius: 20px 20px 0 20px;
+	color: #EEE;
+}
+
+#message {
+	height: 40px;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px 20px;
+	border: none;
+	border-top: 2px solid rgba(37,57,81,0.2);
+	color: #888;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+}
+
+#title {
+	z-index: 99;
+	font-weight: 700;
+	color: #0D2935;
+	max-height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(37,57,81,0.2);
+	margin: 0;
+}
